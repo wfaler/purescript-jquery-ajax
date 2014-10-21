@@ -1,0 +1,24 @@
+{
+  "name": "purescript-client-ajax",
+  "version": "0.0.1",
+  "homepage": "https://github.com/wfaler/purescript-client-ajax",
+  "description": "purescript-client-ajax",
+  "keywords": [
+    "purescript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "output",
+    "tests",
+    "tmp",
+    "bower.json",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "purescript-jquery": "*"
+  }
+}
