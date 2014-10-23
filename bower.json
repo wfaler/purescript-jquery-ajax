@@ -19,6 +19,7 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-jquery": "*"
+      "purescript-jquery": "*",
+      "purescript-transformers": "*"
   }
 }
