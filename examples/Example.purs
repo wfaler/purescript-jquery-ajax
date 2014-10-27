@@ -13,7 +13,7 @@ main = do
   runContT getContinuation print
   
 getContinuation = do
-  res <- ajaxCont "index.html" $ HttpRequest {accepts: Html, contentType: Form, method: GET, contents: Nothing}
+  res <- ajaxCont "index.html" $ HttpRequest {accepts: Html, contentType: FormEncoded, method: GET, contents: Nothing}
   handleContent res
   where
     handleContent (Left err) = return "some error"

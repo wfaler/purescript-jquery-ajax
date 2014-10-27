@@ -19,7 +19,7 @@ type C eff = ContT Unit (Eff (http :: HTTP | eff))
 type URL = String
 data Method = GET | PUT | POST | DELETE
 data Accepts = Xml | Json | Script | Html
-data RequestContent = Form | Multipart | JsonContent | XmlContent | TextContent
+data RequestContent = FormEncoded | Multipart | JsonContent | XmlContent | TextContent
 data HttpRequest a = HttpRequest {accepts :: Accepts, contentType :: RequestContent, method :: Method, contents :: Maybe a}
 
 instance methodShow :: Show Method where
@@ -35,7 +35,7 @@ instance acceptsShow :: Show Accepts where
   show Html = "html"
 
 instance requestContentShow :: Show RequestContent where
-  show Form = "application/x-www-form-urlencoded; charset=UTF-8"
+  show FormEncoded = "application/x-www-form-urlencoded; charset=UTF-8"
   show Multipart = "multipart/form-data; charset=UTF-8"
   show JsonContent = "application/json; charset=UTF-8"
   show XmlContent = "application/xml; charset=UTF-8"

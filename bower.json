@@ -16,10 +16,14 @@
     "tmp",
     "bower.json",
     "Gruntfile.js",
-    "package.json"
+    "package.json",
+    "test"
   ],
   "dependencies": {
-      "purescript-jquery": "*",
-      "purescript-transformers": "*"
-  }
+    "purescript-jquery": "*",
+    "purescript-transformers": "*"
+  },
+  "authors": [
+    "Wille Faler <wille.faler@gmail.com>"
+  ]
 }
